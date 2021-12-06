@@ -1,5 +1,5 @@
 const express = require('express')
-
+const reload = require('reload')
 const app = express()
 
 app.get('/', (req, res) => {
@@ -7,3 +7,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(3000)
+
+reload(app)
