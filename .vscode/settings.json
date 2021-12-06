@@ -4,10 +4,17 @@
   "editor.formatOnType": true,
   "files.autoSave": "afterDelay",
   "editor.bracketPairColorization.enabled": true,
+  
+  //既存のselection highlightは背景がグレー色で認識しにくい。よって、Borderを追加して視認性を良くする。
+  // The existing selection highlight is hard to recognize because of its gray background.
+  // So, add a border to improve visibility.
   "workbench.colorCustomizations": {
   "editor.selectionHighlightBorder": "#934846"
 
 },
 "editor.formatOnPaste": true,
+
+// フォントサイズの2倍に行間を設定する。
+// Set the line height to twice the font size
 "editor.lineHeight": 2
 }
