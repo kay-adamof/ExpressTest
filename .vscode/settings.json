@@ -4,7 +4,7 @@
   "editor.formatOnType": true,
   "files.autoSave": "afterDelay",
   "editor.bracketPairColorization.enabled": true,
-  
+
   //既存のselection highlightは背景がグレー色で認識しにくい。よって、Borderを追加して視認性を良くする。
   // The existing selection highlight is hard to recognize because of its gray background.
   // So, add a border to improve visibility.
@@ -13,6 +13,21 @@
 
 },
 "editor.formatOnPaste": true,
+
+// フォントサイズの管理
+// Control the font size
+"editor.fontSize": 15,
+
+// 垂直ルーラーを表示する列
+// Columns at which to show vertical rulers
+"editor.rulers": [80],
+
+// Controls how lines should wrap. Can be:
+//  - 'off' (disable wrapping),
+//  - 'on' (viewport wrapping),
+//  - 'wordWrapColumn' (wrap at `editor.wordWrapColumn`) or
+//  - 'bounded' (wrap at minimum of viewport and `editor.wordWrapColumn`).
+"editor.wordWrap": "on",
 
 // フォントサイズの2倍に行間を設定する。
 // Set the line height to twice the font size
