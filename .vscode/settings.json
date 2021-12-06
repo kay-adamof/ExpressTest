@@ -1,0 +1,13 @@
+{
+  "editor.defaultFormatter": "HookyQR.beautify",
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "files.autoSave": "afterDelay",
+  "editor.bracketPairColorization.enabled": true,
+  "workbench.colorCustomizations": {
+  "editor.selectionHighlightBorder": "#934846"
+
+},
+"editor.formatOnPaste": true,
+"editor.lineHeight": 2
+}
