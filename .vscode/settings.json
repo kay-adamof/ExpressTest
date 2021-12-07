@@ -1,38 +1,72 @@
 {
   "editor.defaultFormatter": "HookyQR.beautify",
-  "editor.formatOnSave": true,
-  "editor.formatOnType": true,
   "files.autoSave": "afterDelay",
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+
+  // Make ease to find a bracket pair by color.
   "editor.bracketPairColorization.enabled": true,
 
   //既存のselection highlightは背景がグレー色で認識しにくい。よって、Borderを追加して視認性を良くする。
   // The existing selection highlight is hard to recognize because of its gray background.
   // So, add a border to improve visibility.
   "workbench.colorCustomizations": {
-  "editor.selectionHighlightBorder": "#934846"
+    "editor.selectionHighlightBorder": "#934846"
+  },
+  "editor.formatOnPaste": true,
 
-},
-"editor.formatOnPaste": true,
+  // The number of spaces a tab is equal to
+  "editor.tabSize": 2,
 
-// The number of spaces a tab is equal to
-"editor.tabSize": 2,
+  // フォントサイズの管理
+  // Control the font size
+  "editor.fontSize": 15,
 
-// フォントサイズの管理
-// Control the font size
-"editor.fontSize": 15,
+  // 垂直ルーラーを表示する列
+  // Columns at which to show vertical rulers
+  "editor.rulers": [80],
 
-// 垂直ルーラーを表示する列
-// Columns at which to show vertical rulers
-"editor.rulers": [80],
+  // Controls how lines should wrap. Can be:
+  //  - 'off' (disable wrapping),
+  //  - 'on' (viewport wrapping),
+  //  - 'wordWrapColumn' (wrap at `editor.wordWrapColumn`) or
+  //  - 'bounded' (wrap at minimum of viewport and `editor.wordWrapColumn`).
+  "editor.wordWrap": "on",
 
-// Controls how lines should wrap. Can be:
-//  - 'off' (disable wrapping),
-//  - 'on' (viewport wrapping),
-//  - 'wordWrapColumn' (wrap at `editor.wordWrapColumn`) or
-//  - 'bounded' (wrap at minimum of viewport and `editor.wordWrapColumn`).
-"editor.wordWrap": "on",
+  // フォントサイズの2倍に行間を設定する。
+  // Set the line height to twice the font size
+  "editor.lineHeight": 2,
 
-// フォントサイズの2倍に行間を設定する。
-// Set the line height to twice the font size
-"editor.lineHeight": 2
+  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?　、。！？「」【】『』（）",
+
+  // Adds a number at the end of the duplicated name
+  "explorer.incrementalNaming": "smart",
+
+  "editor.renderWhitespace": "all",
+  "editor.showFoldingControls": "always",
+
+  ////////////////   FOR TEAM   ///////////////////
+  // If you work with team, make sure this setting is true or false.
+  // If this setting is difference among your team, the annoying difference will occur.
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.eol": "\n",
+  // Set json formatter to beautify
+  "[jsonc]": {
+    "editor.defaultFormatter": "HookyQR.beautify",
+  },
+  /////////////////////////////////////////////////
+
+  "search.showLineNumbers": true,
+
+  // If true, you can copy text in Terminal to clipboard.
+  "terminal.integrated.copyOnSelection": true,
+
+  "workbench.editor.tabSizing": "shrink",
+
+  "workbench.iconTheme": "material-icon-theme",
+
+  // Open readme if a readme is in your workbench. If not, open welcome page
+  "workbench.startupEditor": "readme"
 }
