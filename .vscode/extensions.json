@@ -1,5 +1,6 @@
 {
   "recommendations": [
-    "usernamehw.remove-empty-lines"
+    "usernamehw.remove-empty-lines",
+    "stackbreak.comment-divider"
   ]
 }

@@ -1,4 +1,7 @@
 {
+  /* -------------------------------------------------------------------------- */
+  /*                                FOR PERSONAL                                */
+  /* -------------------------------------------------------------------------- */
   "editor.defaultFormatter": "HookyQR.beautify",
   "files.autoSave": "afterDelay",
   "editor.formatOnType": true,
@@ -11,7 +14,9 @@
   // The existing selection highlight is hard to recognize because of its gray background.
   // So, add a border to improve visibility.
   "workbench.colorCustomizations": {
-    "editor.selectionHighlightBorder": "#934846"
+    "editorWhitespace.foreground": "#777777",
+    "editor.selectionHighlightBorder": "#934846",
+    "tab.activeBorderTop": "#c9cc11"
   },
   "editor.formatOnPaste": true,
 
@@ -44,20 +49,6 @@
 
   "editor.renderWhitespace": "all",
   "editor.showFoldingControls": "always",
-
-  ////////////////   FOR TEAM   ///////////////////
-  // If you work with team, make sure this setting is true or false.
-  // If this setting is difference among your team, the annoying difference will occur.
-  "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true,
-  "files.trimTrailingWhitespace": true,
-  "files.eol": "\n",
-  // Set json formatter to beautify
-  "[jsonc]": {
-    "editor.defaultFormatter": "HookyQR.beautify",
-  },
-  /////////////////////////////////////////////////
-
   "search.showLineNumbers": true,
 
   // If true, you can copy text in Terminal to clipboard.
@@ -68,5 +59,37 @@
   "workbench.iconTheme": "material-icon-theme",
 
   // Open readme if a readme is in your workbench. If not, open welcome page
-  "workbench.startupEditor": "readme"
+  "workbench.startupEditor": "readme",
+
+  // Extension: Remove empty lines
+  "remove-empty-lines.allowedNumberOfEmptyLines": 1,
+
+  "editor.tabCompletion": "on",
+
+  // Add multi cursor by click with CMD
+  "editor.multiCursorModifier": "ctrlCmd",
+
+  // git commit with no staged
+  "git.enableSmartCommit": true,
+
+  // Update html linked tag while editing
+  "editor.linkedEditing": true,
+
+  /* -------------------------------------------------------------------------- */
+  /*                                  FOR TEAM                                  */
+  /* -------------------------------------------------------------------------- */
+  // If you work with team, make sure this setting is true or false.
+  // If this setting is difference among your team, annoying difference
+  // will occur.
+
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.eol": "\n",
+
+  // Set json formatter to beautify
+  "[jsonc]": {
+    "editor.defaultFormatter": "HookyQR.beautify",
+  }
+  /* -------------------------------------------------------------------------- */
 }
