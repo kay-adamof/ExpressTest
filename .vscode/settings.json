@@ -87,9 +87,8 @@
   "files.trimTrailingWhitespace": true,
   "files.eol": "\n",
 
-  // Set json formatter to beautify
+  // Configure specific settings to language.
   "[jsonc]": {
     "editor.defaultFormatter": "HookyQR.beautify",
   }
-  /* -------------------------------------------------------------------------- */
 }
