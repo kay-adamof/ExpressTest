@@ -5,8 +5,43 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Cute Cat</title>
 </head>
+<script>
+  function editProfile() {
+    document.querySelector('.container').style.display = 'none'
+    document.querySelector('.container-edit').style.display = 'block'
+
+    const name = document.querySelector('#name').textContent
+    document.querySelector('#input-name').value = name
+
+    const email = document.querySelector('#email').textContent
+    document.querySelector('#input-email').value = email
+
+    const interests = document.querySelector('#interests').textContent
+    document.querySelector('#input-interests').value = interests
+
+
+  }
+  function saveProfile() {
+    document.querySelector('#name').textContent = document.querySelector('#input-name').value
+    document.querySelector('#email').textContent = document.querySelector('#input-email').value
+    document.querySelector('#interests').textContent = document.querySelector('#input-interests').value
+
+    document.querySelector('.container').style.display = 'block'
+    document.querySelector('.container-edit').style.display = 'none'
+
+  }
+</script>
+<style>
+  .container {
+    display: block;
+  }
+
+  .container-edit {
+    display: none;
+  }
+</style>
 
 <body>
   <div class="container">
@@ -15,14 +50,27 @@
       src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2F0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
       alt="">
     <div class="profile">
-      Name: <h3 id="name">cute miaw miaw</h3>
+      Name: <h3 id="name" class="profile-name">miaw miaw</h3>
       <hr>
       Email: <h3 id="email">miaw-miaw@example.com</h3>
       <hr>
       interests: <h3 id="interests">sleeping</h3>
-      <button class="button" onclick="editProfile()">Edit</button>
+      <button class="button" onclick="editProfile()">Edit Profile</button>
     </div>
   </div>
+
+  <div class="container-edit">
+    <h1 id="header">User profile</h1>
+    <img src="Profile-picture" alt="">Name:
+    <input type="text" id="input-name">
+    <hr>
+    Email: <input type="email" id="input-email">
+    <hr>
+    interests: <input type="text" id="input-interests">
+    <hr>
+    <button class="button" onclick="saveProfile()">Save Profile</button>
+  </div>
+
 </body>
 <script src="/reload/reload.js"></script>
 
